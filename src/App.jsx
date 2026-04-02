@@ -1,11 +1,6 @@
-// App.jsx
+// ===================== Lab 2: First React Component =====================
 
-// Variable outside the component
-const courseTitle = "React with Vite";
-
-// Main React functional component
 function App() {
-
   // Variable inside the component
   const studentName = "Nour";
 
@@ -21,16 +16,14 @@ function App() {
     return `Hello, ${studentName}!`;
   }
 
-  // JSX must return one parent element
+  // Variable outside the component (defined here for clarity)
+  const courseTitle = "React with Vite";
+
   return (
     <div>
-      {/* Heading */}
+      {/* ===================== Week 2 Content ===================== */}
       <h1>Hello! This is my first React component</h1>
-
-      {/* Display variable inside component */}
       <p>My name is {studentName}</p>
-
-      {/* Display variable outside component */}
       <p>Welcome to {courseTitle}, {studentName}!</p>
 
       {/* Display object properties */}
@@ -44,14 +37,14 @@ function App() {
       {/* Form elements */}
       <label htmlFor="inputName">Enter your name:</label>
       <input type="text" id="inputName" />
+
+      {/* ===================== Reflections ===================== */}
+      {/* One thing I understand well: Rendering variables and objects in JSX */}
+      {/* One thing still confusing: Using functions across multiple components */}
+      {/* One mistake I made and fixed: Tried rendering {student} directly which caused an error */}
     </div>
   );
 }
 
 // Export App so Vite can use it in main.jsx
 export default App;
-
-// Reflection comments for teacher
-// One thing I understand well: Rendering variables and objects in JSX
-// One thing still confusing: Using functions across multiple components
-// One mistake I made and fixed: Tried rendering {student} directly which caused an error
